@@ -7,7 +7,7 @@ class MenuPantalla extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Ejercicios - Arboleda'),
+        title: Text('Ejercicios - Grupo 1'),
         backgroundColor: Colors.blue,
         foregroundColor: Colors.white,
       ),
@@ -26,7 +26,6 @@ class MenuPantalla extends StatelessWidget {
                 leading: Icon(Icons.check_circle, color: Colors.blue),
                 title: Text('Ejercicio 4. Números perfectos'),
                 subtitle: Text('Suma de divisores propios igual al número'),
-                trailing: Icon(Icons.arrow_forward_ios),
                 onTap: () => Navigator.pushNamed(context, '/perfecto'),
               ),
             ),
@@ -36,7 +35,6 @@ class MenuPantalla extends StatelessWidget {
                 leading: Icon(Icons.format_list_numbered, color: Colors.blue),
                 title: Text('Ejercicio 5. Serie de Fibonacci'),
                 subtitle: Text('Generar los primeros N términos'),
-                trailing: Icon(Icons.arrow_forward_ios),
                 onTap: () => Navigator.pushNamed(context, '/fibonacci'),
               ),
             ),
@@ -45,8 +43,9 @@ class MenuPantalla extends StatelessWidget {
               child: ListTile(
                 leading: Icon(Icons.calculate, color: Colors.blue),
                 title: Text('Ejercicio 6. Número Armstrong'),
-                subtitle: Text('Suma de dígitos elevados a la cantidad de cifras'),
-                trailing: Icon(Icons.arrow_forward_ios),
+                subtitle: Text(
+                  'Suma de dígitos elevados a la cantidad de cifras',
+                ),
                 onTap: () => Navigator.pushNamed(context, '/armstrong'),
               ),
             ),
